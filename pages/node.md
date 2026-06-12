@@ -10,4 +10,8 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-export { default } from "./node"
+import NodeApp from './node'
+
+<div className="nx-p-4 nx-border nx-border-gray-200 nx-rounded-xl nx-bg-gray-50 nx-not-prose nx-mt-6">
+  <NodeApp />
+</div>
