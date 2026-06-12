@@ -777,6 +777,13 @@ export default function App() {
       onClick={() => setShowContextMenu(false)}
       onContextMenu={(e) => e.preventDefault()}
     >
+      <style dangerouslySetInnerHTML={{ __html: `
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+        @font-face { font-family: 'Pretendard:Regular'; src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2') format('woff2'); }
+        @font-face { font-family: 'Pretendard:Medium'; src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Medium.woff2') format('woff2'); }
+        @font-face { font-family: 'Pretendard:Bold'; src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Bold.woff2') format('woff2'); }
+      `}} />
+      
       <div style={{ textAlign: "center" }}>
         <p style={{ fontFamily: "'Pretendard:Medium',sans-serif", fontSize: 13, lineHeight: "20px", color: "#999", marginBottom: 4 }}>
           Components / Node — 개발자 모드
